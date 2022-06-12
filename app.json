@@ -1,7 +1,7 @@
 {
-    "name": "سورس جيبثون العرب",
+    "name": "سورس دايموند",
     "description": "تشغيل الاغاني في المجموعات",
-    "logo": "https://te.legra.ph/file/46fa55b49b85c084159ce.jpg",
+    "logo": "https://telegra.ph/file/a8315864237cfd7b78785.jpg",
     "keywords": [
         "py-tgcalls",
         "telegram bot",
@@ -11,9 +11,9 @@
         "mongodb",
         "pyrogram"
     ],
-    "website": "https://t.me/jepthon",
+    "website": "https://t.me/S_U_J",
     "repository": "https://github.com/lMl10l/lMl10l",
-    "success_url": "https://t.me/jepthon",
+    "success_url": "https://t.me/S_U_J",
     "env": {
      "API_ID": {
             "description": "ايبي ايدي",
