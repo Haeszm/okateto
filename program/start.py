@@ -84,10 +84,10 @@ async def start_(c: Client, message: Message):
     user_id = message.from_user.id
     await add_served_user(user_id)
     await message.reply_text(
-        f"""ههݪاެ حبيب {message.from_user.mention()} ❤️‍🔥\n
+        f"""اهلا بيك {message.from_user.mention()} ❤️‍🔥\n
 اެناެ بَۅت بَمميࢪ࣪اެتَ متَعدَدةَ ݪتشغِيݪ اެݪاغاެنِي فَي اެݪمَجمَۅعاتَ 🥇.
 
--› [ᔕOᑌᖇᑕE ᒍEᑭTᕼOᑎ 𖢅](http://t.me/jepthon)
+-› [𝓭𝓲𝓶𝓸𝓷𝓭࿐](http://t.me/S_U_J)
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -124,19 +124,19 @@ async def alive(c: Client, message: Message):
     text = f"**- تابع الاوامر في الاسفل ↓ **"
     await c.send_photo(
         chat_id,
-        photo=f"https://te.legra.ph/file/402c519808f75bd9b1803.jpg",
+        photo=f"https://telegra.ph/file/a8315864237cfd7b78785.jpg",
         caption=text,
         reply_markup=buttons,
     )
 
 
-@Client.on_message(command(["بنك", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["بنج", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 @check_blacklist()
 async def ping_pong(c: Client, message: Message):
     start = time()
-    m_reply = await message.reply_text("جاري حساب البنك...")
+    m_reply = await message.reply_text("جاري حساب البنج...")
     delta_ping = time() - start
-    await m_reply.edit_text("🏓 البنك !\n" f"⏱ `{delta_ping * 1000:.3f} مللي ثانية`")
+    await m_reply.edit_text("🏓 البنج !\n" f"⏱ `{delta_ping * 1000:.3f} مللي ثانية`")
 
 
 @Client.on_message(command(["الوقت", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
@@ -180,7 +180,7 @@ async def new_chat(c: Client, m: Message):
             if member.id == me_bot.id:
                 return await m.reply(
                     "🎗️ وأخيرا ضفتوني ، طبعاً شكراً للي ضافني !\n\n"                 
-                    "👍🏻 اضغط على زر الاوامر حتى تشوف شلون تشغلني ",
+                    "👍🏻 اضغط على زر الاوامر حتى تشوف ازاي تشغلني ",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [

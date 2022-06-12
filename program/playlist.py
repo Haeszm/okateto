@@ -36,7 +36,7 @@ keyboard = InlineKeyboardMarkup(
 )
 
 
-@Client.on_message(command(["الانتضار", f"playlist@{BOT_USERNAME}", "queue", f"queue@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["الانتظار", f"playlist@{BOT_USERNAME}", "queue", f"queue@{BOT_USERNAME}"]) & other_filters)
 @check_blacklist()
 async def playlist(client, m: Message):
     chat_id = m.chat.id
@@ -50,7 +50,7 @@ async def playlist(client, m: Message):
         else:
             QUE = f"-› **الاغنية المشغلة حاليا**`:`\n\n" \
                   f"-› [{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}` \n\n" \
-                  f"**📖 قائمة الانتضار**`:`\n"
+                  f"**📖 قائمة الانتظار**`:`\n"
             l = len(chat_queue)
             for x in range(1, l):
                 han = chat_queue[x][0]
@@ -59,4 +59,4 @@ async def playlist(client, m: Message):
                 QUE = QUE + "\n" + f"`#{x}` - [{han}]({hok}) | `{hap}`"
             await m.reply(QUE, reply_markup=keyboard, disable_web_page_preview=True)
     else:
-        await m.reply("🦴 **ماكو شي مشتغل شبيك؟**")
+        await m.reply("🦴 **مفيش حاجه شغاله ❤️؟**")
